@@ -7,11 +7,9 @@ Welcome to the API documentation! This readme provides an overview of the variou
 - [Authentication APIs](#-authentication-apis)
 - [Provider APIs](#-provider-apis)
 - [General APIs](#-general-apis)
-  - [Simple Services](#simple-services)
-  - [Complex Services](#complex-services)
 - [Tickets APIs](#-tickets-apis)
-- [Employees APIs](#-ticketsemployees-apis)
-- [branches APIs](#-ticketsemployees-apis)
+- [Employees APIs](#-employees-apis)
+- [branches APIs](#-branches-apis)
 
 
 
@@ -29,6 +27,15 @@ Additionally, all provider APIs require a bearer token in the header Except logi
 
 ---
 
+## 🔐 Authentication APIs
+
+The Authentication APIs handle user authentication processes, including login, registration, and token management. These endpoints are crucial for ensuring secure access to the services. You can find details [HERE](docs/authentication)
+
+### Highlights
+- **User Authentication**: Manage login and registration processes.
+- **Token Management**: Handle access and refresh tokens for secure communication.
+
+
 ## 🧑‍💼 Provider APIs
 
 The provider APIs are designed to handle various provider-related functionalities, such as managing orders, profiles, and evaluations. These endpoints allow providers to interact with the Orders, and provider feedback. Go to provider's APIs [HERE](docs/provider)
@@ -36,6 +43,7 @@ The provider APIs are designed to handle various provider-related functionalitie
 ### Highlights
 - **Follow Orders**: View all orders with ease and filter them by date and service type.
 - **Order Details**: Navigate through order steps and upload invoices to finalize the order.
+- **Quick Order**: Navigate through order steps and upload invoices to finalize the order.
 - **Feedback**: Provide evaluations and feedback on services received.
 - **Reschedule Appointments**: Reschedule order appointment times conveniently.
 - **Open Tcikets**: Open Supported Tickets for Providers.
@@ -45,18 +53,7 @@ The provider APIs are designed to handle various provider-related functionalitie
 
 ## 🌐 General APIs
 
-The General APIs provide access to a variety of services and product-related data. These endpoints are essential for fetching information about available services, products, and providers. They facilitate the process of searching and filtering products based on different criteria. There are two types of services within the General APIs: **Simple Services** and **Complex Services**. Go to General APIs from [HERE](docs/general)
-
-### Simple Services
-Simple services are straightforward and easy to manage. They involve basic tasks that do not require intricate scheduling or multiple steps. You can find the documentation for simple services [HERE](docs/general/SimpleServices).
-
-### Complex Services
-Complex services involve multiple steps and may require additional parameters, such as scheduling appointments or selecting specific providers. For more details on complex services, visit the [complex services documentation](docs/general/ComplexServices).
-
-### Highlights
-- **Service Information**: Fetch details about various services and products.
-- **Provider Search**: Find available service providers based on specific criteria.
-- **Scheduling**: Manage and pick schedules for services.
+The General APIs provide access to a variety of services and product-related data. These endpoints are essential for fetching information about available services, products, and providers. They facilitate the process of searching and filtering products based on different criteria.  Go to General APIs from [HERE](docs/general)
 
 ---
 
@@ -70,10 +67,29 @@ The Tickets APIs are designed to manage support tickets. These endpoints allow p
 
 ---
 
-## 🔐 Authentication APIs
+## 🌳 Branches APIs
 
-The Authentication APIs handle user authentication processes, including login, registration, and token management. These endpoints are crucial for ensuring secure access to the services. You can find details [HERE](docs/authentication)
+The Branches APIs provide endpoints for managing branch information, including adding new branches, editing branch details, managing employees, and setting working zones.[HERE](docs/Branches)
+
 
 ### Highlights
-- **User Authentication**: Manage login and registration processes.
-- **Token Management**: Handle access and refresh tokens for secure communication.
+- **Add New Branch**: Create a new branch with specified details.
+- **Edit Branch**: Update existing branch information.
+- **Delete Branch**: Remove a branch from the system.
+- **Add Employee to Branch**: Assign employees to specific branches.
+- **Set Working Zones for Branch**: Define working zones for branches.
+
+
+---
+## 👩‍💼 Employees APIs
+
+The Employees APIs allow management of employee information within branches, including adding new employees, editing employee details, deleting employees, setting working hours, and managing banned times.[HERE](docs/users)
+
+
+### Highlights
+- **Add New Employee**: Register a new employee with specified details.
+- **Edit Employee**: Update existing employee information.
+- **Delete Employee**: Remove an employee from the system.
+- **Set Working Hours**: Define regular working hours for employees.
+- **Manage Banned Times**: Specify times when employees are unavailable.
+
